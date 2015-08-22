@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3326318}
   - 65: {fileID: 6550184}
   - 23: {fileID: 2391438}
-  - 114: {fileID: 11451024}
+  - 114: {fileID: 11432436}
   m_Layer: 0
   m_Name: BorgCube
   m_TagString: Untagged
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.61999989, y: -1.65999997, z: 3.88000011}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalPosition: {x: .56099999, y: -.477999985, z: 4.76599979}
+  m_LocalScale: {x: .150000006, y: .150000006, z: .150000006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,7 +41,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8b6548b8dfeda5f4ab34da8e7792207c, type: 2}
+  - {fileID: 2100000, guid: c864d17199e20194fa13ac4b3a5e0d5e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -74,7 +74,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11451024
+--- !u!114 &11432436
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -82,18 +82,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 195480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639bb00a66828044c82161f9268d584d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f7e1a722367b0246a1edb6f7e23aeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1.5
-  moveSpeed: 5
+  rotationSpeed: 100
+  moveSpeed: .00999999978
+  sun: {fileID: 0}
+  maxDistance: 20
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rotationSpeed
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195480}
