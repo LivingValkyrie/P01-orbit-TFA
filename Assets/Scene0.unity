@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1.5
-  moveSpeed: .100000001
+  moveSpeed: .00100000005
   sun: {fileID: 253619977}
   maxDistance: 100
 --- !u!23 &236747168
