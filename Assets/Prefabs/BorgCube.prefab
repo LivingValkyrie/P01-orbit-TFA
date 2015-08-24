@@ -41,7 +41,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c864d17199e20194fa13ac4b3a5e0d5e, type: 2}
+  - {fileID: 2100000, guid: d8c59dcb1bcd10f43a656e4577d9221b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -82,13 +82,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 195480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f7e1a722367b0246a1edb6f7e23aeb2, type: 3}
+  m_Script: {fileID: 11500000, guid: e6e9f0c4e5849b54ebcda15a59c6128c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
-  moveSpeed: .00999999978
+  moveSpeed: .100000001
   sun: {fileID: 0}
-  maxDistance: 20
+  maxDistance: 1000
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -98,12 +98,20 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: moveSpeed
-      value: 5
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rotationSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxDistance
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8c59dcb1bcd10f43a656e4577d9221b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195480}
