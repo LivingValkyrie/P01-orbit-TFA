@@ -72,4 +72,10 @@ public class ScriptBorgShip : MonoBehaviour {
         Debug.Log(("Ship destroyed"));
         Destroy(this.gameObject);
     }
+
+	void OnTriggerEnter(Collider colliderObj)
+	{
+		Debug.Log(("Ship hit planet " + colliderObj.name + " at " + this.transform.position.ToString()));
+		DestroyShip();
+	}
 }
