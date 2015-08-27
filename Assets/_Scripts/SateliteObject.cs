@@ -20,7 +20,7 @@ public class SateliteObject : MonoBehaviour {
     [Tooltip("The speed at which this object revolves around its parentBody")]
     public float revolutionSpeed;
 
-    #endregion
+	#endregion
 
     private void Start() {}
 
