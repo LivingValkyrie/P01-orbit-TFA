@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class ScriptBorgShip : MonoBehaviour {
@@ -72,4 +73,12 @@ public class ScriptBorgShip : MonoBehaviour {
         Debug.Log(("Ship destroyed"));
         Destroy(this.gameObject);
     }
+
+	void OnTriggerEnter(Collider colliderObj) // Craig
+	{
+		GameObject.Find("Sun").GetComponent<AudioSource>().Play();
+		Debug.Log(("Ship hit planet " + colliderObj.name + " at " + this.transform.position.ToString()));
+		DestroyShip();
+	}
+
 }
