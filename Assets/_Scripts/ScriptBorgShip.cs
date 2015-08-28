@@ -93,7 +93,7 @@ public class ScriptBorgShip : MonoBehaviour {
 	        DestroyShip();
 	    }
 
-	    Debug.Log(canMove);
+	    //Debug.Log(canMove);  //gipson
 	}
 
     // Function that is called when the ship is destroyed.
