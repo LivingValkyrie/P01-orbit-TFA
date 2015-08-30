@@ -263,6 +263,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &256792513 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11458146, guid: 2078dfe65fac9a841ab205e86c5b39c6,
+    type: 2}
+  m_PrefabInternal: {fileID: 518713024}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &518713024
 Prefab:
   m_ObjectHideFlags: 0
@@ -300,7 +306,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22447466, guid: 2078dfe65fac9a841ab205e86c5b39c6, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 22447466, guid: 2078dfe65fac9a841ab205e86c5b39c6, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -524,6 +530,18 @@ Prefab:
       propertyPath: CountdownText
       value: 
       objectReference: {fileID: 1623587069}
+    - target: {fileID: 11432436, guid: 3e6de6da57156034cae4f6addf94f134, type: 2}
+      propertyPath: DeathText
+      value: 
+      objectReference: {fileID: 256792513}
+    - target: {fileID: 11432436, guid: 3e6de6da57156034cae4f6addf94f134, type: 2}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432436, guid: 3e6de6da57156034cae4f6addf94f134, type: 2}
+      propertyPath: respawnTime
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e6de6da57156034cae4f6addf94f134, type: 2}
   m_IsPrefabParent: 0
