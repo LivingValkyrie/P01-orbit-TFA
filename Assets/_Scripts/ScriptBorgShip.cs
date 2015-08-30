@@ -10,7 +10,7 @@ public class ScriptBorgShip : MonoBehaviour {
     public float rotationSpeed = 100f;                          //Speed the ship rotates
 
     [Tooltip("Speed the borg ship moves")]
-    public float moveSpeed = 0.1f;                              //Speed the ship moves
+    public float moveSpeed = 1.0f;                              //Speed the ship moves
 
     [Tooltip("Game object representing the sun")]
     public GameObject sun;                                      //Sun representing the game object
@@ -21,18 +21,25 @@ public class ScriptBorgShip : MonoBehaviour {
     [Tooltip("Position that the ship will start, and respawn at")]
     public Vector3 spawnPosition;                               //Ship spawn and respawn location.
 
-    [Tooltip("Textfield that the countdown will appear in when user dies")]
+    [Tooltip("Time for ship to respawn.")]
+    public int respawnTime;
+
+    [Tooltip("Textfield that the countdown will appear in when user restarts")]
     public Text CountdownText;
 
-    // Private Variables
-    private bool canMove;
+    [Tooltip("Textfield that will appear explaining what to do when player dies.")]
+    public Text DeathText;
 
-    private int count = 5;
+    // Private Variables
+    private bool canMove = true;
+    private bool isDead = false;
+    private int count;
 
 	// Use this for initialization
 	void Start ()
     {
         // Checks to make sure the variables are set to acceptable values in the editor.
+        // @author: Nathan
 #if UNITY_EDITOR
         if (rotationSpeed == 0)
         {
@@ -53,55 +60,81 @@ public class ScriptBorgShip : MonoBehaviour {
 	    {
 	        Debug.Log("Sun game object is not set on the ship script.");
 	    }
+
+        if(DeathText == null)
+        {
+            Debug.Log("DeathText is not set in ship script.");
+        }
+
+        if(CountdownText == null)
+        {
+            Debug.Log("CountdownText is not set in ship script.");
+        }
 #endif
-        DestroyShip();
 	    CountdownText.text = "";
+        DeathText.text = "";
+        count = respawnTime;
 	    transform.position = spawnPosition;
     }
 	
 	// Update is called once per frame
+    // @author: Nathan
 	void Update ()
     {
-        // Getting the WASD inputs for rotating the ship.
-	    if(Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(Vector3.up, -(Time.deltaTime * rotationSpeed));
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(Vector3.up, Time.deltaTime * rotationSpeed);
-        }
-        if(Input.GetKey(KeyCode.W))
-        {
-            transform.Rotate(Vector3.right, -(Time.deltaTime * rotationSpeed));
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            transform.Rotate(Vector3.right, Time.deltaTime * rotationSpeed);
-        }
-
         // Moves the ship forward at a constant pace if canMove is true.
 	    if (canMove)
+        {
             transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime, Space.Self);
 
+            // Getting the WASD inputs for rotating the ship.
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(Vector3.up, -(Time.deltaTime * rotationSpeed));
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(Vector3.up, Time.deltaTime * rotationSpeed);
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.Rotate(Vector3.right, -(Time.deltaTime * rotationSpeed));
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                transform.Rotate(Vector3.right, Time.deltaTime * rotationSpeed);
+            }
+        }
+
+        if (isDead)
+        {
+            if(Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+            else if(Input.GetKey(KeyCode.Space))
+            {
+                DeathText.text = "";
+                InvokeRepeating("RespawnTimer", 0f, 1.0f);
+            }
+        }
         // Gets the distance the ship is from the sun.
-	    float distance = Vector3.Distance(this.transform.position, sun.transform.position);
+        float distance = Vector3.Distance(this.transform.position, sun.transform.position);
 
         // If that distance is greater than the maximum allowed distance, call the destroy ship function.
 	    if (distance > maxDistance)
 	    {
 	        DestroyShip();
 	    }
-
-	    Debug.Log(canMove);
 	}
 
     // Function that is called when the ship is destroyed.
+    // @author: Nathan
     void DestroyShip()
     {
+        DeathText.text = "Press Esc to exit game\nPress spacebar to start again";
         canMove = false;
+        isDead = true;
         transform.position = spawnPosition;
-        InvokeRepeating("RespawnTimer", 1.0f, 1.0f);
     }
 
 	void OnTriggerEnter(Collider colliderObj) // Craig
@@ -111,6 +144,8 @@ public class ScriptBorgShip : MonoBehaviour {
 		DestroyShip();
 	}
 
+    // Function that decrements the time in countdown.
+    // @author: Nathan
     void RespawnTimer()
     {
         CountdownText.text = count.ToString();
@@ -118,8 +153,9 @@ public class ScriptBorgShip : MonoBehaviour {
         if (count < 0)
         {
             CountdownText.text = "";
-            count = 5;
+            count = respawnTime;
             canMove = true;
+            isDead = false;
             CancelInvoke("RespawnTimer");
         }
     }
