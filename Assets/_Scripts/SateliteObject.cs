@@ -20,15 +20,29 @@ public class SateliteObject : MonoBehaviour {
     [Tooltip("The speed at which this object revolves around its parentBody")]
     public float revolutionSpeed;
 
-	#endregion
+    #endregion
 
-    private void Start() {}
+    void Start() {
+#if UNITY_EDITOR
 
-    private void Update() {
-        
-        transform.RotateAround(parentBody.position,Vector3.up, (revolutionSpeed * Time.deltaTime * 1000) / 365);
-        transform.Rotate(Vector3.up, Time.deltaTime * rotationSpeed);
+        if (parentBody == null) {
+            Debug.Log("parent body has not been set for " + transform.name);
+        }
 
+        if (rotationSpeed == 0) {
+            Debug.Log("rotation speed has not been set for " + transform.name);
+        }
+
+        if (revolutionSpeed == 0) {
+            Debug.Log("revolution speed has not been set for " + transform.name);
+        }
+
+#endif
+    }
+
+    void Update() {
+        transform.RotateAround(parentBody.position, Vector3.up, (revolutionSpeed*Time.deltaTime*1000)/365);
+        transform.Rotate(Vector3.up, Time.deltaTime*rotationSpeed);
     }
 
 }
