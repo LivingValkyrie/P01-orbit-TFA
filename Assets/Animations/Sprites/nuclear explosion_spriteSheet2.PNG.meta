@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 423c9afa326336642a524f5067d8fa05
+timeCreated: 1440863534
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nuclear explosion_spriteSheet2_0
+    21300002: nuclear explosion_spriteSheet2_1
+    21300004: nuclear explosion_spriteSheet2_2
+    21300006: nuclear explosion_spriteSheet2_3
+    21300008: nuclear explosion_spriteSheet2_4
+    21300010: nuclear explosion_spriteSheet2_5
+    21300012: nuclear explosion_spriteSheet2_6
+    21300014: nuclear explosion_spriteSheet2_7
+    21300016: nuclear explosion_spriteSheet2_8
+    21300018: nuclear explosion_spriteSheet2_9
+    21300020: nuclear explosion_spriteSheet2_10
+    21300022: nuclear explosion_spriteSheet2_11
+    21300024: nuclear explosion_spriteSheet2_12
+    21300026: nuclear explosion_spriteSheet2_13
+    21300028: nuclear explosion_spriteSheet2_14
+    21300030: nuclear explosion_spriteSheet2_15
+    21300032: nuclear explosion_spriteSheet2_16
+    21300034: nuclear explosion_spriteSheet2_17
+    21300036: nuclear explosion_spriteSheet2_18
+    21300038: nuclear explosion_spriteSheet2_19
+    21300040: nuclear explosion_spriteSheet2_20
+    21300042: nuclear explosion_spriteSheet2_21
+    21300044: nuclear explosion_spriteSheet2_22
+    21300046: nuclear explosion_spriteSheet2_23
+    21300048: nuclear explosion_spriteSheet2_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nuclear explosion_spriteSheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 880
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 880
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 880
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 880
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 660
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 660
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 660
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 660
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 440
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 440
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_13
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 440
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 440
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 220
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 220
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_18
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 220
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_19
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 220
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear explosion_spriteSheet2_24
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 320
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

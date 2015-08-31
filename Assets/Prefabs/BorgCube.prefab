@@ -57,7 +57,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 0, z: 8.5}
   m_LocalScale: {x: .150000006, y: .150000006, z: .150000006}
   m_Children:
@@ -181,11 +181,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
-  moveSpeed: .00999999978
+  moveSpeed: 1
   sun: {fileID: 0}
   maxDistance: 100
   spawnPosition: {x: 6.5, y: -.5, z: 4.75}
+  respawnTime: 10
   CountdownText: {fileID: 0}
+  DeathText: {fileID: 0}
+  deathCountText: {fileID: 0}
+  boomAnimation: {fileID: 136468, guid: 81dc14c575e8b054fb25a83c58260a07, type: 2}
 --- !u!124 &12429458
 Behaviour:
   m_ObjectHideFlags: 1
